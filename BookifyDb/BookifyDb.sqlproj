@@ -62,8 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\Bookmark.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishProfies\BookifyDb.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="BookifyDb.refactorlog" />
   </ItemGroup>
 </Project>
