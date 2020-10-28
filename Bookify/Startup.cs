@@ -12,17 +12,22 @@ using Bookify.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using DataLibrary;
 
 namespace Bookify
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnv )
         {
             Configuration = configuration;
+            EnvRootPath = webHostEnv.ContentRootPath;
+            BookmarkManager bookmarkManager = new BookmarkManager(EnvRootPath);
+
         }
 
         public IConfiguration Configuration { get; }
+        public string EnvRootPath { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)

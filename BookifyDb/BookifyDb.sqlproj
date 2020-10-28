@@ -58,8 +58,12 @@
     <Folder Include="Properties" />
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
+    <Folder Include="PublishProfies\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishProfies\BookifyDb.publish.xml" />
   </ItemGroup>
 </Project>

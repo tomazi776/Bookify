@@ -2710,6 +2710,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "DataLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DataLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLibrary.dll": {}
+        }
       }
     }
   },
@@ -8828,10 +8838,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "DataLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DataLibrary/DataLibrary.csproj",
+      "msbuildProject": "../DataLibrary/DataLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DataLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.8",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.8",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.8",
@@ -8870,7 +8886,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Tomek\\source\\repos\\Bookify\\DataLibrary\\DataLibrary.csproj": {
+              "projectPath": "C:\\Users\\Tomek\\source\\repos\\Bookify\\DataLibrary\\DataLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

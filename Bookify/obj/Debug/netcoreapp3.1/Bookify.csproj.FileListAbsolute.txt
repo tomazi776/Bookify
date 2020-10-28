@@ -165,3 +165,5 @@ C:\Users\Tomek\source\repos\Bookify\Bookify\obj\Debug\netcoreapp3.1\Bookify.cspr
 C:\Users\Tomek\source\repos\Bookify\Bookify\obj\Debug\netcoreapp3.1\Bookify.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Tomek\source\repos\Bookify\Bookify\obj\Debug\netcoreapp3.1\Bookify.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Tomek\source\repos\Bookify\Bookify\obj\Debug\netcoreapp3.1\Razor\Views\Home\SignUp.cshtml.g.cs
+C:\Users\Tomek\source\repos\Bookify\Bookify\bin\Debug\netcoreapp3.1\DataLibrary.dll
+C:\Users\Tomek\source\repos\Bookify\Bookify\bin\Debug\netcoreapp3.1\DataLibrary.pdb
