@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="bc28a55b-9d59-4b11-b80e-d9d8ec4b4687" ChangeDateTime="10/28/2020 17:43:19">
+    <Property Name="ElementName" Value="[dbo].[Bookmark].[BookmarkAddress]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Bookmark]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="HtmlAddress" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4e13b807-b569-4513-9ab0-865ca475730e" ChangeDateTime="10/28/2020 17:43:50">
+    <Property Name="ElementName" Value="[dbo].[Bookmark].[HtmlAddress]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Bookmark]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WebAddress" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6bc6bd30-2b80-44fe-be3f-c1cef48a4bc5" ChangeDateTime="10/28/2020 17:45:47">
+    <Property Name="ElementName" Value="[dbo].[Bookmark].[BookmarkFilePath]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Bookmark]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FilePath" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="12b958fd-bf42-4377-94ec-d5cb68ebc8c7" ChangeDateTime="10/28/2020 17:46:01">
+    <Property Name="ElementName" Value="[dbo].[Bookmark].[FilePath]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Bookmark]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+</Operations>
