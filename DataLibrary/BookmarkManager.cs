@@ -27,7 +27,6 @@ namespace DataLibrary
             using (StreamReader streamReader = new StreamReader(file.FullName))
             {
                 string html = streamReader.ReadToEnd();
-                var ddd = "";
             }
         }
     }

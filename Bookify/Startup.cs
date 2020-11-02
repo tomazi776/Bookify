@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DataLibrary;
+using DataLibrary.DataAccess;
 
 namespace Bookify
 {
@@ -23,7 +24,6 @@ namespace Bookify
             Configuration = configuration;
             EnvRootPath = webHostEnv.ContentRootPath;
             BookmarkManager bookmarkManager = new BookmarkManager(EnvRootPath);
-
         }
 
         public IConfiguration Configuration { get; }
@@ -34,7 +34,13 @@ namespace Bookify
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("BookifyDbConnection")));
+                    Configuration.GetConnectionString("BookifyDbCnn")));
+
+            //Register SqlDataAccess(Dapper) in scope, register services for CRUD on Models
+            services.AddScoped<ISqlDataAccess, SqlDataAccess>();
+            services.AddScoped<IUserProcessor, UserProcessor>();
+            services.AddScoped<IBookmarkProcessor, BookmarkProcessor>();
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
@@ -68,6 +74,9 @@ namespace Bookify
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                //endpoints.MapControllerRoute(
+                //    name: "bookmarks",
+                //    pattern: "{controller=Home}/{action=ViewUserBookmarks}/{userId?}");
                 endpoints.MapRazorPages();
             });
         }

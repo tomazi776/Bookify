@@ -167,3 +167,8 @@ C:\Users\Tomek\source\repos\Bookify\Bookify\obj\Debug\netcoreapp3.1\Bookify.MvcA
 C:\Users\Tomek\source\repos\Bookify\Bookify\obj\Debug\netcoreapp3.1\Razor\Views\Home\SignUp.cshtml.g.cs
 C:\Users\Tomek\source\repos\Bookify\Bookify\bin\Debug\netcoreapp3.1\DataLibrary.dll
 C:\Users\Tomek\source\repos\Bookify\Bookify\bin\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\Users\Tomek\source\repos\Bookify\Bookify\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\Tomek\source\repos\Bookify\Bookify\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Tomek\source\repos\Bookify\Bookify\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Tomek\source\repos\Bookify\Bookify\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Tomek\source\repos\Bookify\Bookify\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewUserBookmarks.cshtml.g.cs
