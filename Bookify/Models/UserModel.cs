@@ -12,17 +12,24 @@ namespace Bookify.Models
         [Display(Name = "First Name")]
         [Required(ErrorMessage = "You need to provide First Name")]
         public string FirstName { get; set; }
+
+
         [Display(Name = "Last Name")]
         [Required(ErrorMessage = "You need to provide Last Name")]
         public string LastName { get; set; }
+
+
         [Display(Name = "Email Address")]
         [Required(ErrorMessage = "You need to provide Email Address")]
         [DataType(DataType.EmailAddress)]
         public string EmailAddress { get; set; }
 
         [Display(Name = "Confirm Email")]
+        [Required(ErrorMessage = "You need to confirm Email Address")]
+        [DataType(DataType.EmailAddress)]
         [Compare("EmailAddress", ErrorMessage ="Email Address and Compare Email must match.")]
         public string ConfirmEmail { get; set; }
+
         [Display(Name = "Password")]
         [Required(ErrorMessage = "You need to provide password")]
         [DataType(DataType.Password)]
@@ -30,6 +37,8 @@ namespace Bookify.Models
         public string Password { get; set; }
 
         [Display(Name = "Confirm password")]
+        [Required(ErrorMessage = "You need to confirm password")]
+        [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Your password and Compare password do not match")]
         public string ConfirmPassword { get; set; }
     }
